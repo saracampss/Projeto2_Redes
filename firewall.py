@@ -7,7 +7,7 @@ from pox.lib.revent import *
 regras = []
 
 # Cria regras p/ bloquear MAC addresses da conexão entre 10 hosts de forma sequente (contato de 1 e 2 bloqueados, contato de 2 e 3 bloqueados, etc)
-for x in range(1, 8):
+for x in range(1, 9):
     regras.append(['00:00:00:00:00:0%s' % x, '00:00:00:00:00:0%s' % (x+1)])
 regras.append(['00:00:00:00:00:09','00:00:00:00:00:10'])
 
