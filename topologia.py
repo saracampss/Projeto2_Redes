@@ -27,7 +27,7 @@ class TopoProjeto2( Topo ):
         lastSwitch = 1  # define qual sera o switch a se conectar com o host
         for h in range(x):
             if h < 9:
-                host = self.addHost('h%s' % (h+1), ip = '192.168.1.%s/24' % (h+1), mac = '00:00:00:00:00:0%s' % (h+1))
+                host = self.addHost('h0%s' % (h+1), ip = '192.168.1.%s/24' % (h+1), mac = '00:00:00:00:00:0%s' % (h+1))
             else:
                 host = self.addHost('h%s' % (h+1), ip = '192.168.1.%s/24' % (h+1), mac = '00:00:00:00:00:%s' % (h+1))
             hostList.append(host)
